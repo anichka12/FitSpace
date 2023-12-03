@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Форма зворотнього зв'язку</title>
+	<link rel="stylesheet" href="style1.css">
+</head>
+<body>
+	<header>
+			<p class="custom-color"> FIT SPACE </p>
+        	<h1>Запис на заняття</h1>
+       		 <form action="process_feedback.php" method="post" class="form">
+           
+            	<label for="name">Ваше ім'я:</label>
+            	<input type="text" id="name" placeholder="Anna" required>
+
+            	<label for="contact-method">Оберіть спосіб зв'язку:</label>
+    			<select id="contact-method" name="contact-method">
+        		<option value="email">Email</option>
+        		<option value="telegram">Дзвінок</option>
+        		<option value="telegram">Telegram</option>
+        		<option value="instagram">Viber</option>
+   				</select>
+
+
+            	<label for="email">Ваш телефон/Email:</label>
+            	<input type="email" id="email" name="email" placeholder="annachekh2005@gmail.com"required>
+
+            	<label for="contact-method">Час занять:</label>
+    			<select id="contact-method" name="contact-method">
+        		<option value="email">8.00 - Понеділок/Середа</option>
+        		<option value="telegram">10.00 - Вівторок/П'ятниця</option>
+        		<option value="telegram">17.30 - Середа/Субота</option>
+        		<option value="instagram">19.00 - Вівторок/Четвер</option>
+   				</select>
+
+            	<label for="message">Додаткові побажання:</label>
+            	<textarea id="message" name="message" required></textarea>
+
+            	
+            	<input type="submit"  class="button" value="Запис">
+        	</form>
+        
+    </header>
+</body>
+</html>
+
